@@ -1,0 +1,23 @@
+{
+  "name": "array-stream",
+  "version": "1.0.0",
+  "description": "Use array methods as a pipeline to reduce the code complexity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JorgeEmanoel/array-streams.git"
+  },
+  "keywords": [
+    "array",
+    "streams"
+  ],
+  "author": "Jorge Emanoel <eu.jorge.emanoell@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeEmanoel/array-streams/issues"
+  },
+  "homepage": "https://github.com/JorgeEmanoel/array-streams#readme"
+}
