@@ -1,5 +1,6 @@
 const FillHandler = require("./handlers/FillHandler")
 const FilterHandler = require("./handlers/FilterHandler")
+const FindHandler = require("./handlers/FindHandler")
 const MainHandler = require("./handlers/MainHandler")
 const MapHandler = require("./handlers/MapHandler")
 const ReduceHandler = require("./handlers/ReduceHandler")
@@ -38,6 +39,11 @@ class ArrayStream {
 
   fill(value, start = 'all', end = 'all') {
     this._handler = this._handler.next(new FillHandler(value, start, end))
+    return this
+  }
+
+  find(value) {
+    this._handler = this._handler.next(new FindHandler(value))
     return this
   }
 
